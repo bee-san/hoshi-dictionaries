@@ -21,9 +21,9 @@
       },
       "file": "jitendex.hoshi.zst",
       "size": 99441236,
-      "sha256": "ce699fc1dd53863148e857bd040f9c7ea34cdbd13ec8459d8c3552f83e021964",
-      "zst_size": 54427654,
-      "zst_sha256": "8ade539eb7f3cf341d8c2b871469ffd9db41cc6e985242d4f2af5ed82c0a2431"
+      "sha256": "b87a0859ae7efc4068afdc274297db7a4ee1e0522c4a679794cb718655eb9a87",
+      "zst_size": 54372568,
+      "zst_sha256": "6165323074ab671178a850e676035eb3a3a7627f3c3c3dd414e67fad7709ec59"
     },
     {
       "name": "jmdict-english",
@@ -45,9 +45,9 @@
       },
       "file": "jmdict-english.hoshi.zst",
       "size": 72245056,
-      "sha256": "edf7d6764d30b369ed94afd48f04563da848d8f74ce2d41e85682629b2b968da",
-      "zst_size": 27027568,
-      "zst_sha256": "f031339399660d59103c6adc07d6e6bbd0f51cc632a23b7b1b90e2d8f56add22"
+      "sha256": "bd0f23797aedd0d584de852730e7a24c8811536154b21c0b1258b0bcaf3d7ca3",
+      "zst_size": 26996160,
+      "zst_sha256": "b7464cdb6542f1cd2fccbfa8327a70dc6be7ae994ff5c33e5797a96fbe7eaa98"
     },
     {
       "name": "jmnedict",
@@ -69,9 +69,9 @@
       },
       "file": "jmnedict.hoshi.zst",
       "size": 75550144,
-      "sha256": "9278d2576e8c0f57d580c5e3ea959adc35bb0cf2f79e14c1f0f31f02d9419dfa",
-      "zst_size": 23758144,
-      "zst_sha256": "b794720eaf3be67f420e84c2911c588fb545bd3205ec3146bb08689000802084"
+      "sha256": "308f5686f40a316cee21e0fee8c0218f7d3da0a17ab85a91e0b8932e7612ff64",
+      "zst_size": 23725979,
+      "zst_sha256": "a8a707c1fa68619f9414713100612e85c933ae6b900c765fd8eec69a6f1d62d1"
     },
     {
       "name": "kanjidic2",
@@ -93,9 +93,9 @@
       },
       "file": "kanjidic2.hoshi.zst",
       "size": 3079184,
-      "sha256": "2c7e700d670fc22364badfd34cfe8c72d4e2f4f744a6856ec1875dbbdc2bf8f3",
-      "zst_size": 757675,
-      "zst_sha256": "3aed03914d7e2b51795dc05f5d2f675ee046bd66a466b4f311c75778ac3d499e"
+      "sha256": "7f6a191525ddc4a272f1a641e3ea3b57141db01e6700b57843243461ca3d6351",
+      "zst_size": 754785,
+      "zst_sha256": "b7dde9d3b56b537c36b4af6ecf82558c8381e9de3b07b73628bdb2ed7e85805f"
     },
     {
       "name": "wiktionary-ja-en",
@@ -117,9 +117,9 @@
       },
       "file": "wiktionary-ja-en.hoshi.zst",
       "size": 104784256,
-      "sha256": "33f4903bd5f864ef70089bf591b1a715b4a5a55dacdbcd43e8f565c7a5e4a34c",
-      "zst_size": 35766256,
-      "zst_sha256": "9ae134732960934ff124ea19f4696439ad627f8f41bfeab69bbec836acb48276"
+      "sha256": "16ca070ba4245f62cb015c3111e095d4c5f969f0d58bae61ec5301b8f1239efc",
+      "zst_size": 35764350,
+      "zst_sha256": "005554d58ce033d9284677df739e81628d04b8ad0522f10651e550ef2ec3975a"
     },
     {
       "name": "wiktionary-ja-en-ipa",
@@ -141,9 +141,9 @@
       },
       "file": "wiktionary-ja-en-ipa.hoshi.zst",
       "size": 12117136,
-      "sha256": "72ff4b1bdb34cf484b3f65e538c0ff0d8e05b800039607f17267804f092db56b",
-      "zst_size": 1743837,
-      "zst_sha256": "6b7ec6d1ca99fc59299241db7799091bc68fb75afc7334d2d3a361abc25b4b53"
+      "sha256": "d527bac8824ce671ac0aca3a4d74eccf9e318eb13c5b9ed739fb3b64b9182839",
+      "zst_size": 1734622,
+      "zst_sha256": "2abee46250f18d63796860ee5613ac85a05c33881fa2e41e206e3f727aab4aba"
     }
   ]
 }
