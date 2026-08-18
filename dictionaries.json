@@ -1,0 +1,167 @@
+{
+  "hosted": [
+    {
+      "name": "jitendex",
+      "title": "Jitendex",
+      "kind": "term",
+      "license": "CC BY-SA 4.0",
+      "homepage": "https://jitendex.org",
+      "repo": "stephenmk/stephenmk.github.io",
+      "release": "latest",
+      "asset": "jitendex-yomitan.zip",
+      "note": "JMdict rebuilt with example sentences and cleaner formatting. The default choice for Japanese to English."
+    },
+    {
+      "name": "jmdict-english",
+      "title": "JMdict (English)",
+      "kind": "term",
+      "license": "CC BY-SA 4.0",
+      "homepage": "https://www.edrdg.org/jmdict/j_jmdict.html",
+      "repo": "yomidevs/jmdict-yomitan",
+      "release": "latest",
+      "asset": "JMdict_english.zip",
+      "note": "Plain JMdict, for anyone who wants it without Jitendex's presentation."
+    },
+    {
+      "name": "jmnedict",
+      "title": "JMnedict",
+      "kind": "term",
+      "license": "CC BY-SA 4.0",
+      "homepage": "https://www.edrdg.org/enamdict/enamdict_doc.html",
+      "repo": "yomidevs/jmdict-yomitan",
+      "release": "latest",
+      "asset": "JMnedict.zip",
+      "note": "Proper names: people, places, companies, works."
+    },
+    {
+      "name": "kanjidic2",
+      "title": "KANJIDIC2 (English)",
+      "kind": "kanji",
+      "license": "CC BY-SA 4.0",
+      "homepage": "https://www.edrdg.org/wiki/index.php/KANJIDIC_Project",
+      "repo": "yomidevs/jmdict-yomitan",
+      "release": "latest",
+      "asset": "KANJIDIC_english.zip",
+      "note": "Kanji readings, meanings, grades and stroke counts."
+    },
+    {
+      "name": "wiktionary-ja-en",
+      "title": "Wiktionary (Japanese to English)",
+      "kind": "term",
+      "license": "CC BY-SA 4.0",
+      "homepage": "https://github.com/yomidevs/kaikki-to-yomitan",
+      "repo": "yomidevs/kaikki-to-yomitan",
+      "release": "v2025-04-08-10-54-36-00-00",
+      "asset": "kty-ja-en.zip",
+      "note": "Pinned rather than latest: the newest upstream release published its index files without the dictionaries."
+    },
+    {
+      "name": "wiktionary-ja-en-ipa",
+      "title": "Wiktionary IPA (Japanese)",
+      "kind": "ipa",
+      "license": "CC BY-SA 4.0",
+      "homepage": "https://github.com/yomidevs/kaikki-to-yomitan",
+      "repo": "yomidevs/kaikki-to-yomitan",
+      "release": "v2025-04-08-10-54-36-00-00",
+      "asset": "kty-ja-en-ipa.zip",
+      "note": "Pronunciation transcriptions. Pinned for the same reason as wiktionary-ja-en."
+    }
+  ],
+  "byo": [
+    {
+      "title": "大辞林 / Daijirin",
+      "kind": "term",
+      "reason": "commercial dictionary; the Yomitan builds in circulation are unauthorised conversions"
+    },
+    {
+      "title": "大辞泉 / Daijisen",
+      "kind": "term",
+      "reason": "commercial dictionary; same as above"
+    },
+    {
+      "title": "明鏡国語辞典 / Meikyou",
+      "kind": "term",
+      "reason": "commercial dictionary; same as above"
+    },
+    {
+      "title": "新明解国語辞典 / Shinmeikai",
+      "kind": "term",
+      "reason": "commercial dictionary; same as above"
+    },
+    {
+      "title": "三省堂国語辞典 / Sanseidou",
+      "kind": "term",
+      "reason": "commercial dictionary; same as above"
+    },
+    {
+      "title": "広辞苑 / Koujien",
+      "kind": "term",
+      "reason": "commercial dictionary; same as above"
+    },
+    {
+      "title": "研究社 新和英大辞典",
+      "kind": "term",
+      "reason": "commercial dictionary; same as above"
+    },
+    {
+      "title": "ウィズダム英和・和英辞典 / Wisdom",
+      "kind": "term",
+      "reason": "commercial dictionary; same as above"
+    },
+    {
+      "title": "実用日本語表現辞典 / Weblio",
+      "kind": "term",
+      "reason": "scraped from weblio.jp, no redistribution grant"
+    },
+    {
+      "title": "ピクシブ百科事典 / Pixiv Light",
+      "kind": "term",
+      "reason": "scraped from dic.pixiv.net, no redistribution grant"
+    },
+    {
+      "title": "ニコニコ大百科",
+      "kind": "term",
+      "reason": "scraped from dic.nicovideo.jp, no redistribution grant"
+    },
+    {
+      "title": "A Dictionary of Japanese Grammar (DoJG)",
+      "kind": "term",
+      "reason": "commercial book, unauthorised conversion"
+    },
+    {
+      "title": "JPDB frequency",
+      "kind": "frequency",
+      "reason": "scraped from jpdb.io, no redistribution grant"
+    },
+    {
+      "title": "Innocent Corpus frequency",
+      "kind": "frequency",
+      "reason": "counts derived from a corpus of copyrighted novels, no stated license"
+    },
+    {
+      "title": "BCCWJ frequency",
+      "kind": "frequency",
+      "reason": "derived from a licensed corpus, redistribution not granted"
+    },
+    {
+      "title": "Anime & J-drama frequency",
+      "kind": "frequency",
+      "reason": "derived from subtitle corpora, no stated license"
+    },
+    {
+      "title": "VN / Narou frequency",
+      "kind": "frequency",
+      "reason": "derived from copyrighted text, no stated license"
+    },
+    {
+      "title": "Kanjium pitch accents",
+      "kind": "pitch",
+      "reason": "derived from NHK and Daijirin accent data, redistribution not granted"
+    },
+    {
+      "title": "NHK 日本語発音アクセント新辞典",
+      "kind": "pitch",
+      "reason": "commercial dictionary; unauthorised conversion"
+    }
+  ]
+}

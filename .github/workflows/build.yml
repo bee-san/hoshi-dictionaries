@@ -1,0 +1,81 @@
+name: build
+
+on:
+  schedule:
+    # jmdict-yomitan rebuilds daily and Jitendex lands between the 5th and the 11th,
+    # so the 15th always picks up something current
+    - cron: '0 6 15 * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: rebuild even if every dictionary is already published at its current tag
+        type: boolean
+        default: false
+      only:
+        description: comma-separated dictionary names, empty for all
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Resolve upstream releases
+        id: resolve
+        run: |
+          scripts/resolve.sh > resolved.json
+          cat resolved.json
+          if [ "${{ inputs.force }}" = 'true' ] || [ -n "${{ inputs.only }}" ]; then
+            exit 0
+          fi
+          if ! gh release download --pattern manifest.json --dir previous --clobber 2>/dev/null; then
+            echo 'nothing published yet'
+            exit 0
+          fi
+          new=$(jq -Sc 'to_entries | map({name: .key, upstream_tag: .value}) | sort_by(.name)' resolved.json)
+          old=$(jq -Sc '[.dictionaries[] | {name, upstream_tag}] | sort_by(.name)' previous/manifest.json)
+          if [ "$new" = "$old" ]; then
+            echo 'every dictionary is already published at its current upstream tag'
+            echo 'skip=true' >> "$GITHUB_OUTPUT"
+          fi
+
+      - if: steps.resolve.outputs.skip != 'true'
+        run: sudo apt-get update && sudo apt-get install -y g++-14 zstd
+
+      # the engine is c++23 and uses std::views::as_rvalue and std::ranges::to,
+      # which gcc 13 on ubuntu-24.04 does not have
+      - if: steps.resolve.outputs.skip != 'true'
+        name: Build hoshidicts-cli
+        env:
+          CC: gcc-14
+          CXX: g++-14
+        run: |
+          cmake -S hoshidicts -B build -DCMAKE_BUILD_TYPE=Release -DHOSHIDICTS_CLI=ON
+          cmake --build build --target hoshidicts-cli --parallel
+
+      - if: steps.resolve.outputs.skip != 'true'
+        name: Import and pack
+        env:
+          ONLY: ${{ inputs.only }}
+        run: scripts/build.sh
+
+      - if: steps.resolve.outputs.skip != 'true'
+        name: Publish
+        run: |
+          tag="dicts-$(date -u +%Y.%m.%d)"
+          if [ "${{ inputs.force }}" = 'true' ]; then
+            gh release delete "$tag" --yes --cleanup-tag 2>/dev/null || true
+          fi
+          gh release create "$tag" \
+            --title "Dictionaries $(date -u +%Y-%m-%d)" \
+            --notes-file out/notes.md \
+            out/*.hoshi.zst out/manifest.json out/SHA256SUMS
