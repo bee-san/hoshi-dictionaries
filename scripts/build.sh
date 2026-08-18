@@ -128,7 +128,7 @@ rm -f out/*.manifest.json
 
 repository=${GITHUB_REPOSITORY:-bee-san/hoshi-dictionaries}
 {
-  echo "Recommended Yomitan dictionaries as single-file [\`.hoshi\`](https://github.com/Manhhao/hoshidicts/blob/main/docs/hoshi-container-v1.md) containers, ready to map and query with no import step."
+  echo "Recommended Yomitan dictionaries as single-file [\`.hoshi\`](https://github.com/Manhhao/hoshidicts#container-format) containers, ready to map and query with no import step."
   echo
   echo "| dictionary | kind | entries | download | upstream |"
   echo "| --- | --- | --- | --- | --- |"

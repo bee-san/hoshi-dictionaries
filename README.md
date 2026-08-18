@@ -1,7 +1,7 @@
 # hoshi-dictionaries
 
 Japanese dictionaries as single-file
-[`.hoshi`](https://github.com/Manhhao/hoshidicts/blob/main/docs/hoshi-container-v1.md)
+[`.hoshi`](https://github.com/Manhhao/hoshidicts#container-format)
 containers, rebuilt monthly.
 
 A `.hoshi` file is the directory a [hoshidicts](https://github.com/Manhhao/hoshidicts) import
