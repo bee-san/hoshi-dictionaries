@@ -81,8 +81,10 @@ catalogue.
 `.github/workflows/build.yml` runs on the 15th of each month, so the dictionaries update
 themselves. It is idempotent: it resolves every upstream release and does nothing if the
 published `manifest.json` already records the same tags for all of them, which costs about
-25 seconds. `workflow_dispatch` runs it by hand, with `force` to rebuild anyway and `only` to
-rebuild a subset. Want it fresher? `jmdict-yomitan` rebuilds daily, so changing the cron to
+25 seconds. `workflow_dispatch` runs it by hand, with `force` to rebuild and republish anyway. `only`
+builds a subset **without publishing** — a subset release would replace `latest` with one
+missing the other dictionaries and break their stable URLs, so it is a smoke test, not a
+partial update. To refresh one dictionary in the published set, use `force`. Want it fresher? `jmdict-yomitan` rebuilds daily, so changing the cron to
 weekly is a one-line edit — the cost is a release per week rather than per month.
 
 Each release also commits its `manifest.json` back to this repository, so

@@ -12,7 +12,7 @@ on:
         type: boolean
         default: false
       only:
-        description: comma-separated dictionary names, empty for all
+        description: comma-separated dictionary names to build without publishing, empty for all
         type: string
         default: ''
 
@@ -69,13 +69,14 @@ jobs:
           ONLY: ${{ inputs.only }}
         run: scripts/build.sh
 
-      - if: steps.resolve.outputs.skip != 'true'
+      # a subset build is a smoke test: publishing it would replace the latest release with
+      # one that is missing the other dictionaries, breaking their stable download urls
+      - if: steps.resolve.outputs.skip != 'true' && inputs.only == ''
         name: Publish
         run: |
           tag="dicts-$(date -u +%Y.%m.%d)"
-          if [ "${{ inputs.force }}" = 'true' ]; then
-            gh release delete "$tag" --yes --cleanup-tag 2>/dev/null || true
-          fi
+          # reaching this step means there is something new, so today's release is superseded
+          gh release delete "$tag" --yes --cleanup-tag 2>/dev/null || true
           gh release create "$tag" \
             --title "Dictionaries $(date -u +%Y-%m-%d)" \
             --notes-file out/notes.md \
@@ -84,7 +85,7 @@ jobs:
       # a commit per release keeps a diffable record of what shipped, and keeps the
       # schedule alive: github disables cron on a public repository after 60 days with
       # no repository activity, and publishing a release does not count
-      - if: steps.resolve.outputs.skip != 'true'
+      - if: steps.resolve.outputs.skip != 'true' && inputs.only == ''
         name: Record what was published
         run: |
           cp out/manifest.json manifest.json
