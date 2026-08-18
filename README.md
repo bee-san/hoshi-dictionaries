@@ -78,10 +78,23 @@ catalogue.
 
 ## How it is built
 
-`.github/workflows/build.yml` runs on the 15th of each month. It is idempotent: it resolves
-every upstream release and does nothing if the published `manifest.json` already records the
-same tags for all of them. `workflow_dispatch` runs it by hand, with `force` to rebuild anyway
-and `only` to rebuild a subset.
+`.github/workflows/build.yml` runs on the 15th of each month, so the dictionaries update
+themselves. It is idempotent: it resolves every upstream release and does nothing if the
+published `manifest.json` already records the same tags for all of them, which costs about
+25 seconds. `workflow_dispatch` runs it by hand, with `force` to rebuild anyway and `only` to
+rebuild a subset. Want it fresher? `jmdict-yomitan` rebuilds daily, so changing the cron to
+weekly is a one-line edit — the cost is a release per week rather than per month.
+
+Each release also commits its `manifest.json` back to this repository, so
+[`manifest.json`](manifest.json) always shows what is currently published without going near
+the releases API. That commit is load-bearing for a second reason: GitHub
+[disables cron on a public repository after 60 days with no repository activity](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule),
+and publishing a release does not reset that clock. Without a commit per run the schedule
+would quietly switch itself off after two months.
+
+If a run fails — upstream renaming an asset is the likely cause — it files or comments on a
+single tracking issue, because an unattended job that fails quietly is a job that has stopped
+working.
 
 Everything the workflow does lives in `scripts/build.sh`, so a broken run is reproducible:
 

@@ -1,0 +1,149 @@
+{
+  "hoshidicts": "3842172",
+  "dictionaries": [
+    {
+      "name": "jitendex",
+      "title": "Jitendex",
+      "kind": "term",
+      "license": "CC BY-SA 4.0",
+      "homepage": "https://jitendex.org",
+      "upstream_repo": "stephenmk/stephenmk.github.io",
+      "upstream_tag": "2026.08.11.0",
+      "upstream_asset": "jitendex-yomitan.zip",
+      "payload_version": 4,
+      "counts": {
+        "terms": 435448,
+        "meta": 0,
+        "freq": 0,
+        "pitch": 0,
+        "kanji": 0,
+        "media": 250
+      },
+      "file": "jitendex.hoshi.zst",
+      "size": 99441236,
+      "sha256": "ce699fc1dd53863148e857bd040f9c7ea34cdbd13ec8459d8c3552f83e021964",
+      "zst_size": 54427654,
+      "zst_sha256": "8ade539eb7f3cf341d8c2b871469ffd9db41cc6e985242d4f2af5ed82c0a2431"
+    },
+    {
+      "name": "jmdict-english",
+      "title": "JMdict (English)",
+      "kind": "term",
+      "license": "CC BY-SA 4.0",
+      "homepage": "https://www.edrdg.org/jmdict/j_jmdict.html",
+      "upstream_repo": "yomidevs/jmdict-yomitan",
+      "upstream_tag": "2026-08-18",
+      "upstream_asset": "JMdict_english.zip",
+      "payload_version": 4,
+      "counts": {
+        "terms": 526257,
+        "meta": 0,
+        "freq": 0,
+        "pitch": 0,
+        "kanji": 0,
+        "media": 0
+      },
+      "file": "jmdict-english.hoshi.zst",
+      "size": 72245056,
+      "sha256": "edf7d6764d30b369ed94afd48f04563da848d8f74ce2d41e85682629b2b968da",
+      "zst_size": 27027568,
+      "zst_sha256": "f031339399660d59103c6adc07d6e6bbd0f51cc632a23b7b1b90e2d8f56add22"
+    },
+    {
+      "name": "jmnedict",
+      "title": "JMnedict",
+      "kind": "term",
+      "license": "CC BY-SA 4.0",
+      "homepage": "https://www.edrdg.org/enamdict/enamdict_doc.html",
+      "upstream_repo": "yomidevs/jmdict-yomitan",
+      "upstream_tag": "2026-08-18",
+      "upstream_asset": "JMnedict.zip",
+      "payload_version": 4,
+      "counts": {
+        "terms": 667871,
+        "meta": 0,
+        "freq": 0,
+        "pitch": 0,
+        "kanji": 0,
+        "media": 0
+      },
+      "file": "jmnedict.hoshi.zst",
+      "size": 75550144,
+      "sha256": "9278d2576e8c0f57d580c5e3ea959adc35bb0cf2f79e14c1f0f31f02d9419dfa",
+      "zst_size": 23758144,
+      "zst_sha256": "b794720eaf3be67f420e84c2911c588fb545bd3205ec3146bb08689000802084"
+    },
+    {
+      "name": "kanjidic2",
+      "title": "KANJIDIC2 (English)",
+      "kind": "kanji",
+      "license": "CC BY-SA 4.0",
+      "homepage": "https://www.edrdg.org/wiki/index.php/KANJIDIC_Project",
+      "upstream_repo": "yomidevs/jmdict-yomitan",
+      "upstream_tag": "2026-08-18",
+      "upstream_asset": "KANJIDIC_english.zip",
+      "payload_version": 3,
+      "counts": {
+        "terms": 0,
+        "meta": 0,
+        "freq": 0,
+        "pitch": 0,
+        "kanji": 10384,
+        "media": 0
+      },
+      "file": "kanjidic2.hoshi.zst",
+      "size": 3079184,
+      "sha256": "2c7e700d670fc22364badfd34cfe8c72d4e2f4f744a6856ec1875dbbdc2bf8f3",
+      "zst_size": 757675,
+      "zst_sha256": "3aed03914d7e2b51795dc05f5d2f675ee046bd66a466b4f311c75778ac3d499e"
+    },
+    {
+      "name": "wiktionary-ja-en",
+      "title": "Wiktionary (Japanese to English)",
+      "kind": "term",
+      "license": "CC BY-SA 4.0",
+      "homepage": "https://github.com/yomidevs/kaikki-to-yomitan",
+      "upstream_repo": "yomidevs/kaikki-to-yomitan",
+      "upstream_tag": "v2025-04-08-10-54-36-00-00",
+      "upstream_asset": "kty-ja-en.zip",
+      "payload_version": 4,
+      "counts": {
+        "terms": 692524,
+        "meta": 0,
+        "freq": 0,
+        "pitch": 0,
+        "kanji": 0,
+        "media": 0
+      },
+      "file": "wiktionary-ja-en.hoshi.zst",
+      "size": 104784256,
+      "sha256": "33f4903bd5f864ef70089bf591b1a715b4a5a55dacdbcd43e8f565c7a5e4a34c",
+      "zst_size": 35766256,
+      "zst_sha256": "9ae134732960934ff124ea19f4696439ad627f8f41bfeab69bbec836acb48276"
+    },
+    {
+      "name": "wiktionary-ja-en-ipa",
+      "title": "Wiktionary IPA (Japanese)",
+      "kind": "ipa",
+      "license": "CC BY-SA 4.0",
+      "homepage": "https://github.com/yomidevs/kaikki-to-yomitan",
+      "upstream_repo": "yomidevs/kaikki-to-yomitan",
+      "upstream_tag": "v2025-04-08-10-54-36-00-00",
+      "upstream_asset": "kty-ja-en-ipa.zip",
+      "payload_version": 3,
+      "counts": {
+        "terms": 0,
+        "meta": 56477,
+        "freq": 0,
+        "pitch": 56477,
+        "kanji": 0,
+        "media": 0
+      },
+      "file": "wiktionary-ja-en-ipa.hoshi.zst",
+      "size": 12117136,
+      "sha256": "72ff4b1bdb34cf484b3f65e538c0ff0d8e05b800039607f17267804f092db56b",
+      "zst_size": 1743837,
+      "zst_sha256": "6b7ec6d1ca99fc59299241db7799091bc68fb75afc7334d2d3a361abc25b4b53"
+    }
+  ]
+}
