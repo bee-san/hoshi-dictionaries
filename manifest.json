@@ -1,5 +1,5 @@
 {
-  "hoshidicts": "3842172",
+  "hoshidicts": "d73edb3",
   "dictionaries": [
     {
       "name": "jitendex",
@@ -8,11 +8,11 @@
       "license": "CC BY-SA 4.0",
       "homepage": "https://jitendex.org",
       "upstream_repo": "stephenmk/stephenmk.github.io",
-      "upstream_tag": "2026.08.11.0",
+      "upstream_tag": "2026.10.03.0",
       "upstream_asset": "jitendex-yomitan.zip",
       "payload_version": 4,
       "counts": {
-        "terms": 435448,
+        "terms": 436555,
         "meta": 0,
         "freq": 0,
         "pitch": 0,
@@ -20,10 +20,10 @@
         "media": 250
       },
       "file": "jitendex.hoshi.zst",
-      "size": 99441236,
-      "sha256": "b87a0859ae7efc4068afdc274297db7a4ee1e0522c4a679794cb718655eb9a87",
-      "zst_size": 54372568,
-      "zst_sha256": "6165323074ab671178a850e676035eb3a3a7627f3c3c3dd414e67fad7709ec59"
+      "size": 99927444,
+      "sha256": "f74276dd2403fddf8c66c4d5ff2b9bba13181600e6695ded7c4a73e24b083526",
+      "zst_size": 54564466,
+      "zst_sha256": "2bb37966d12b8b50029e995568d53137674005d005c6582db8c1d08dd8246079"
     },
     {
       "name": "jmdict-english",
@@ -32,11 +32,11 @@
       "license": "CC BY-SA 4.0",
       "homepage": "https://www.edrdg.org/jmdict/j_jmdict.html",
       "upstream_repo": "yomidevs/jmdict-yomitan",
-      "upstream_tag": "2026-08-18",
+      "upstream_tag": "2026-10-15",
       "upstream_asset": "JMdict_english.zip",
       "payload_version": 4,
       "counts": {
-        "terms": 526257,
+        "terms": 527404,
         "meta": 0,
         "freq": 0,
         "pitch": 0,
@@ -44,10 +44,10 @@
         "media": 0
       },
       "file": "jmdict-english.hoshi.zst",
-      "size": 72245056,
-      "sha256": "bd0f23797aedd0d584de852730e7a24c8811536154b21c0b1258b0bcaf3d7ca3",
-      "zst_size": 26996160,
-      "zst_sha256": "b7464cdb6542f1cd2fccbfa8327a70dc6be7ae994ff5c33e5797a96fbe7eaa98"
+      "size": 72396928,
+      "sha256": "baf6a9ed28ebe5c22e735a40c231a5d8c4bda61a43b5726ed6025d0a79ba7de4",
+      "zst_size": 26691267,
+      "zst_sha256": "f1d4a5ceb4a6d7934d83bbc141156f0ab876ac3760a47a6750b8a3cfff39d024"
     },
     {
       "name": "jmnedict",
@@ -56,11 +56,11 @@
       "license": "CC BY-SA 4.0",
       "homepage": "https://www.edrdg.org/enamdict/enamdict_doc.html",
       "upstream_repo": "yomidevs/jmdict-yomitan",
-      "upstream_tag": "2026-08-18",
+      "upstream_tag": "2026-10-15",
       "upstream_asset": "JMnedict.zip",
       "payload_version": 4,
       "counts": {
-        "terms": 667871,
+        "terms": 668006,
         "meta": 0,
         "freq": 0,
         "pitch": 0,
@@ -68,10 +68,10 @@
         "media": 0
       },
       "file": "jmnedict.hoshi.zst",
-      "size": 75550144,
-      "sha256": "308f5686f40a316cee21e0fee8c0218f7d3da0a17ab85a91e0b8932e7612ff64",
-      "zst_size": 23725979,
-      "zst_sha256": "a8a707c1fa68619f9414713100612e85c933ae6b900c765fd8eec69a6f1d62d1"
+      "size": 75578240,
+      "sha256": "03efd58c2f0695053780022424ee28041e87761bbfdd010d9796f779b8991bb7",
+      "zst_size": 23729828,
+      "zst_sha256": "adaf4322a10e1163105493831af28768812f92d7006d1ede41cb4e2c648f8d88"
     },
     {
       "name": "kanjidic2",
@@ -80,7 +80,7 @@
       "license": "CC BY-SA 4.0",
       "homepage": "https://www.edrdg.org/wiki/index.php/KANJIDIC_Project",
       "upstream_repo": "yomidevs/jmdict-yomitan",
-      "upstream_tag": "2026-08-18",
+      "upstream_tag": "2026-10-15",
       "upstream_asset": "KANJIDIC_english.zip",
       "payload_version": 3,
       "counts": {
@@ -93,9 +93,9 @@
       },
       "file": "kanjidic2.hoshi.zst",
       "size": 3079184,
-      "sha256": "7f6a191525ddc4a272f1a641e3ea3b57141db01e6700b57843243461ca3d6351",
-      "zst_size": 754785,
-      "zst_sha256": "b7dde9d3b56b537c36b4af6ecf82558c8381e9de3b07b73628bdb2ed7e85805f"
+      "sha256": "5eba4fccc4b8e8d672bb8e8e3bb64a8f74ee16fd99428fed1351a91246429849",
+      "zst_size": 755448,
+      "zst_sha256": "75078ac43c6a5071804be0f49618b3b1963d875f577a5e3c924ecb1debe728a5"
     },
     {
       "name": "wiktionary-ja-en",
@@ -117,9 +117,9 @@
       },
       "file": "wiktionary-ja-en.hoshi.zst",
       "size": 104784256,
-      "sha256": "16ca070ba4245f62cb015c3111e095d4c5f969f0d58bae61ec5301b8f1239efc",
-      "zst_size": 35764350,
-      "zst_sha256": "005554d58ce033d9284677df739e81628d04b8ad0522f10651e550ef2ec3975a"
+      "sha256": "878ffce18bd0bca0754f177f937a262287cbddacc2177ba90177d75012a266de",
+      "zst_size": 35764351,
+      "zst_sha256": "a135fa1f992311c302c1d96a715febda5c3b84489741509cbaa28e0db7ce4e9f"
     },
     {
       "name": "wiktionary-ja-en-ipa",
@@ -141,9 +141,9 @@
       },
       "file": "wiktionary-ja-en-ipa.hoshi.zst",
       "size": 12117136,
-      "sha256": "d527bac8824ce671ac0aca3a4d74eccf9e318eb13c5b9ed739fb3b64b9182839",
-      "zst_size": 1734622,
-      "zst_sha256": "2abee46250f18d63796860ee5613ac85a05c33881fa2e41e206e3f727aab4aba"
+      "sha256": "98bd86d7857c57ea3fc99aa135dd49252fc365b3949de35077414e29ae49758a",
+      "zst_size": 1734775,
+      "zst_sha256": "3026cdec2b2dc5210afb38e7f0734c071db1a055074b5d227e5878f99e989f06"
     }
   ]
 }
