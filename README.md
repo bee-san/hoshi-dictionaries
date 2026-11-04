@@ -1,5 +1,7 @@
 # hoshi-dictionaries
 
+[![Discord](https://img.shields.io/discord/754001738184392704?logo=discord&label=Discord)](https://discord.skerritt.blog)
+
 Japanese dictionaries as single-file
 [`.hoshi`](https://github.com/Manhhao/hoshidicts#container-format)
 containers, rebuilt monthly.
